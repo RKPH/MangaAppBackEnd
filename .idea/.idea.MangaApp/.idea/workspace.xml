@@ -13,6 +13,7 @@
   <component name="ChangeListManager">
     <list default="true" id="fece7f8c-d6c4-4633-9d67-7af843061a08" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/MangaApp/Controllers/ImageController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MangaApp/DTO/EditingUserDto.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/MangaApp/DTO/UpdateFaceDto.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/MangaApp/Dockerfile" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/MangaApp/Migrations/20240516030657_AddAUthenticationImage.Designer.cs" afterDir="false" />
@@ -20,7 +21,7 @@
       <change afterPath="$PROJECT_DIR$/MangaApp/bin/Debug/net8.0/Cloudinary.dll" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/MangaApp/bin/Debug/net8.0/CloudinaryDotNet.dll" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/MangaApp/obj/Debug/net8.0/MangaApp.sourcelink.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MangaApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MangaApp/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MangaApp/Controllers/UsersController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MangaApp/Controllers/UsersController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MangaApp/MangaApp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/MangaApp/MangaApp.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MangaApp/Migrations/MangaAppDbcontextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MangaApp/Migrations/MangaAppDbcontextModelSnapshot.cs" afterDir="false" />
@@ -87,40 +88,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Launch Settings Profile.MangaApp: IIS Express.executor": "Run",
-    ".NET Launch Settings Profile.MangaApp: http.executor": "Run",
-    ".NET Launch Settings Profile.MangaApp: https.executor": "Run",
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Docker.MangaApp/Dockerfile.executor": "Run",
-    "HTTP Request.MangaApp | #1.executor": "Run",
-    "Publish to IIS.Publish MangaApp to IIS.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "vcs.Git",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.MangaApp: IIS Express.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.MangaApp: http.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.MangaApp: https.executor&quot;: &quot;Run&quot;,
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Docker.MangaApp/Dockerfile.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.MangaApp | #1.executor&quot;: &quot;Run&quot;,
+    &quot;Publish to IIS.Publish MangaApp to IIS.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "ChangesTree.GroupingKeys": [
-      "directory",
-      "repository"
+  &quot;keyToStringList&quot;: {
+    &quot;ChangesTree.GroupingKeys&quot;: [
+      &quot;directory&quot;,
+      &quot;repository&quot;
     ],
-    "rider.external.source.directories": [
-      "C:\\Users\\pnghu\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache",
-      "C:\\Users\\pnghu\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache",
-      "C:\\Users\\pnghu\\AppData\\Local\\Symbols\\src"
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\pnghu\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\pnghu\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\pnghu\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Docker.MangaApp/Dockerfile">
     <configuration name="MangaApp: hung11062003-001-site1 - FTP" type="DotNetMsBuildPublish" factoryName="Publish to IIS">
       <riderPublish configuration="Release" platform="Any CPU" publish_profile="hung11062003-001-site1 - FTP.pubxml" pubxml_path="$PROJECT_DIR$/MangaApp/Properties/PublishProfiles/hung11062003-001-site1 - FTP.pubxml" user_name="hung11062003-001" uuid_high="-3320815708700391370" uuid_low="-7491799678192294649" />
@@ -252,6 +253,8 @@
       <workItem from="1715671556754" duration="14590000" />
       <workItem from="1715760450218" duration="2758000" />
       <workItem from="1715827278174" duration="12974000" />
+      <workItem from="1715934335366" duration="3500000" />
+      <workItem from="1716136867316" duration="2926000" />
     </task>
     <servers />
   </component>
