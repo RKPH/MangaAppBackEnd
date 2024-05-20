@@ -22,6 +22,8 @@
       <change afterPath="$PROJECT_DIR$/MangaApp/bin/Debug/net8.0/CloudinaryDotNet.dll" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/MangaApp/obj/Debug/net8.0/MangaApp.sourcelink.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MangaApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MangaApp/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MangaApp" beforeDir="false" afterPath="$PROJECT_DIR$/MangaApp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MangaApp/Controllers/AuthController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MangaApp/Controllers/AuthController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MangaApp/Controllers/UsersController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MangaApp/Controllers/UsersController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MangaApp/MangaApp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/MangaApp/MangaApp.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MangaApp/Migrations/MangaAppDbcontextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MangaApp/Migrations/MangaAppDbcontextModelSnapshot.cs" afterDir="false" />
@@ -187,6 +189,7 @@
       <deployment type="dockerfile">
         <settings>
           <option name="imageTag" value="mangaapp" />
+          <option name="buildOnly" value="true" />
           <option name="containerName" value="mangaapp" />
           <option name="contextFolderPath" value="." />
           <option name="portBindings">
@@ -254,7 +257,8 @@
       <workItem from="1715760450218" duration="2758000" />
       <workItem from="1715827278174" duration="12974000" />
       <workItem from="1715934335366" duration="3500000" />
-      <workItem from="1716136867316" duration="2926000" />
+      <workItem from="1716136867316" duration="4893000" />
+      <workItem from="1716218316409" duration="413000" />
     </task>
     <servers />
   </component>
