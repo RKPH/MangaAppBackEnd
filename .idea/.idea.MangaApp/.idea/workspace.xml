@@ -23,6 +23,7 @@
       <change afterPath="$PROJECT_DIR$/MangaApp/bin/Debug/net8.0/Cloudinary.dll" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/MangaApp/bin/Debug/net8.0/CloudinaryDotNet.dll" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/MangaApp/obj/Debug/net8.0/MangaApp.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MangaApp" beforeDir="false" afterPath="$PROJECT_DIR$/MangaApp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MangaApp/Controllers/AuthController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MangaApp/Controllers/AuthController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MangaApp/Controllers/UserMangaController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MangaApp/Controllers/UserMangaController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MangaApp/Controllers/UsersController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MangaApp/Controllers/UsersController.cs" afterDir="false" />
@@ -260,7 +261,7 @@
       <workItem from="1715934335366" duration="3500000" />
       <workItem from="1716136867316" duration="4893000" />
       <workItem from="1716218316409" duration="2177000" />
-      <workItem from="1716293719853" duration="3754000" />
+      <workItem from="1716293719853" duration="4897000" />
     </task>
     <servers />
   </component>
