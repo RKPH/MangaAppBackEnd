@@ -12,8 +12,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fece7f8c-d6c4-4633-9d67-7af843061a08" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/config/applicationhost.config" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/MangaApp/Controllers/CommentsController.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/MangaApp/DTO/CommentDto.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/MangaApp/Migrations/20240620022456_Comments.Designer.cs" afterDir="false" />
@@ -70,6 +68,7 @@
     <option name="defaultAccountId" value="6fd09a77-dc01-4c34-8ae9-7fab12214179" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/35c92475bf5347d0aeece605170b69cd3818b0/dc/2c482833/IQueryable`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/bd1154a8c2834548940500226b7d74b784908/da/2a192983/Enumerable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/de3edec1170e48a0a2478d8743508635c8e910/de/36e38555/Guid.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -268,7 +267,7 @@
       <workItem from="1717482428124" duration="1809000" />
       <workItem from="1718028282067" duration="7426000" />
       <workItem from="1718672019165" duration="13558000" />
-      <workItem from="1718849589154" duration="6687000" />
+      <workItem from="1718849589154" duration="7411000" />
     </task>
     <task id="LOCAL-00001" summary="mangaapp">
       <option name="closed" value="true" />
