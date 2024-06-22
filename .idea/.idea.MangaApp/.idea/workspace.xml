@@ -14,10 +14,14 @@
     <list default="true" id="fece7f8c-d6c4-4633-9d67-7af843061a08" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/MangaApp/Controllers/CommentsController.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/MangaApp/DTO/CommentDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MangaApp/DTO/CommentReponseDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MangaApp/Interfaces/ICommentRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MangaApp/Interfaces/IUserMangaRepository.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/MangaApp/Migrations/20240620022456_Comments.Designer.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/MangaApp/Migrations/20240620022456_Comments.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/MangaApp/Model/Domain/Comments.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/MangaApp/Model/Domain/SaveType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MangaApp/Respository/CommentRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MangaApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MangaApp/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MangaApp" beforeDir="false" afterPath="$PROJECT_DIR$/MangaApp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MangaApp/Controllers/AuthController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MangaApp/Controllers/AuthController.cs" afterDir="false" />
@@ -28,6 +32,7 @@
       <change beforePath="$PROJECT_DIR$/MangaApp/Data/MangaAppDbcontext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MangaApp/Data/MangaAppDbcontext.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MangaApp/MangaApp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/MangaApp/MangaApp.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MangaApp/Migrations/MangaAppDbcontextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MangaApp/Migrations/MangaAppDbcontextModelSnapshot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MangaApp/Model/Domain/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MangaApp/Model/Domain/User.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MangaApp/Model/Domain/UserManga.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MangaApp/Model/Domain/UserManga.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MangaApp/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MangaApp/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MangaApp/Services/TokenService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MangaApp/Services/TokenService.cs" afterDir="false" />
@@ -267,7 +272,9 @@
       <workItem from="1717482428124" duration="1809000" />
       <workItem from="1718028282067" duration="7426000" />
       <workItem from="1718672019165" duration="13558000" />
-      <workItem from="1718849589154" duration="7411000" />
+      <workItem from="1718849589154" duration="8374000" />
+      <workItem from="1718934509152" duration="4810000" />
+      <workItem from="1719030662584" duration="9082000" />
     </task>
     <task id="LOCAL-00001" summary="mangaapp">
       <option name="closed" value="true" />
