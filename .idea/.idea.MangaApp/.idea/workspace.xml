@@ -19,6 +19,8 @@
       <change afterPath="$PROJECT_DIR$/MangaApp/Interfaces/IUserMangaRepository.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/MangaApp/Migrations/20240620022456_Comments.Designer.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/MangaApp/Migrations/20240620022456_Comments.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MangaApp/Migrations/20240622144301_Redefine Foreign key.Designer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MangaApp/Migrations/20240622144301_Redefine Foreign key.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/MangaApp/Model/Domain/Comments.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/MangaApp/Model/Domain/SaveType.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/MangaApp/Respository/CommentRepository.cs" afterDir="false" />
@@ -274,7 +276,7 @@
       <workItem from="1718672019165" duration="13558000" />
       <workItem from="1718849589154" duration="8374000" />
       <workItem from="1718934509152" duration="4810000" />
-      <workItem from="1719030662584" duration="9082000" />
+      <workItem from="1719030662584" duration="9764000" />
     </task>
     <task id="LOCAL-00001" summary="mangaapp">
       <option name="closed" value="true" />
