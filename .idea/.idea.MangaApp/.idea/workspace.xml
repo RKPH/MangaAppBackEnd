@@ -81,6 +81,7 @@
     <option name="defaultAccountId" value="6fd09a77-dc01-4c34-8ae9-7fab12214179" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/aspnetcore/8486d31e24f30e3fa1809a95699a0adc16f448d7/src/Mvc/Mvc.Core/src/ControllerBase.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/35c92475bf5347d0aeece605170b69cd3818b0/dc/2c482833/IQueryable`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/bd1154a8c2834548940500226b7d74b784908/da/2a192983/Enumerable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/de3edec1170e48a0a2478d8743508635c8e910/de/36e38555/Guid.cs" root0="SKIP_HIGHLIGHTING" />
@@ -284,7 +285,9 @@
       <workItem from="1718934509152" duration="4810000" />
       <workItem from="1719030662584" duration="16855000" />
       <workItem from="1719141733230" duration="12413000" />
-      <workItem from="1719312032099" duration="1061000" />
+      <workItem from="1719312032099" duration="4564000" />
+      <workItem from="1719482745134" duration="248000" />
+      <workItem from="1719483004243" duration="2932000" />
     </task>
     <task id="LOCAL-00001" summary="mangaapp">
       <option name="closed" value="true" />
