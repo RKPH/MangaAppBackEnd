@@ -18,6 +18,7 @@
       <change afterPath="$PROJECT_DIR$/MangaApp/DTO/RequestUpdatePointDto.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/MangaApp/Interfaces/ICommentRepository.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/MangaApp/Interfaces/IUserMangaRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MangaApp/Interfaces/IUserRepository.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/MangaApp/Migrations/20240620022456_Comments.Designer.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/MangaApp/Migrations/20240620022456_Comments.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/MangaApp/Migrations/20240622144301_Redefine Foreign key.Designer.cs" afterDir="false" />
@@ -32,6 +33,7 @@
       <change afterPath="$PROJECT_DIR$/MangaApp/Model/Domain/SaveType.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/MangaApp/Respository/CommentRepository.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/MangaApp/Respository/UserMangaRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MangaApp/Respository/UserRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MangaApp/Controllers/AuthController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MangaApp/Controllers/AuthController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MangaApp/Controllers/UserMangaController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MangaApp/Controllers/UserMangaController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MangaApp/Controllers/UsersController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MangaApp/Controllers/UsersController.cs" afterDir="false" />
@@ -287,7 +289,7 @@
       <workItem from="1719141733230" duration="12413000" />
       <workItem from="1719312032099" duration="4564000" />
       <workItem from="1719482745134" duration="248000" />
-      <workItem from="1719483004243" duration="7959000" />
+      <workItem from="1719483004243" duration="10980000" />
     </task>
     <task id="LOCAL-00001" summary="mangaapp">
       <option name="closed" value="true" />
