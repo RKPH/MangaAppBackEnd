@@ -34,6 +34,7 @@
       <change afterPath="$PROJECT_DIR$/MangaApp/Respository/CommentRepository.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/MangaApp/Respository/UserMangaRepository.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/MangaApp/Respository/UserRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MangaApp" beforeDir="false" afterPath="$PROJECT_DIR$/MangaApp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MangaApp/Controllers/AuthController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MangaApp/Controllers/AuthController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MangaApp/Controllers/UserMangaController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MangaApp/Controllers/UserMangaController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MangaApp/Controllers/UsersController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MangaApp/Controllers/UsersController.cs" afterDir="false" />
@@ -289,7 +290,7 @@
       <workItem from="1719141733230" duration="12413000" />
       <workItem from="1719312032099" duration="4564000" />
       <workItem from="1719482745134" duration="248000" />
-      <workItem from="1719483004243" duration="10980000" />
+      <workItem from="1719483004243" duration="11494000" />
     </task>
     <task id="LOCAL-00001" summary="mangaapp">
       <option name="closed" value="true" />
