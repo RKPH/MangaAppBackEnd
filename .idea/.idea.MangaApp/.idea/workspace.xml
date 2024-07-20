@@ -47,6 +47,7 @@
       <change beforePath="$PROJECT_DIR$/MangaApp/Controllers/AuthController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MangaApp/Controllers/AuthController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MangaApp/Controllers/UserMangaController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MangaApp/Controllers/UserMangaController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MangaApp/Controllers/UsersController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MangaApp/Controllers/UsersController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MangaApp/DTO/AuthDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MangaApp/DTO/AuthDto.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MangaApp/DTO/UserDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MangaApp/DTO/UserDto.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MangaApp/DTO/mangaDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MangaApp/DTO/mangaDto.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MangaApp/Data/MangaAppDbcontext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MangaApp/Data/MangaAppDbcontext.cs" afterDir="false" />
@@ -64,6 +65,8 @@
       <change beforePath="$PROJECT_DIR$/MangaApp/bin/Debug/net8.0/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/MangaApp/bin/Debug/net8.0/appsettings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MangaApp/obj/Debug/net8.0/MangaApp.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MangaApp/obj/Debug/net8.0/MangaApp.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MangaApp/obj/Debug/net8.0/MangaApp.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MangaApp/obj/Debug/net8.0/MangaApp.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MangaApp/obj/Debug/net8.0/MangaApp.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MangaApp/obj/Debug/net8.0/MangaApp.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MangaApp/obj/Debug/net8.0/MangaApp.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MangaApp/obj/Debug/net8.0/MangaApp.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MangaApp/obj/Debug/net8.0/MangaApp.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MangaApp/obj/Debug/net8.0/MangaApp.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MangaApp/obj/Debug/net8.0/MangaApp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MangaApp/obj/Debug/net8.0/MangaApp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MangaApp/obj/Debug/net8.0/MangaApp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MangaApp/obj/Debug/net8.0/MangaApp.pdb" afterDir="false" />
@@ -71,6 +74,10 @@
       <change beforePath="$PROJECT_DIR$/MangaApp/obj/Debug/net8.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/MangaApp/obj/Debug/net8.0/apphost.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MangaApp/obj/Debug/net8.0/ref/MangaApp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MangaApp/obj/Debug/net8.0/ref/MangaApp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MangaApp/obj/Debug/net8.0/refint/MangaApp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MangaApp/obj/Debug/net8.0/refint/MangaApp.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MangaApp/obj/MangaApp.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/MangaApp/obj/MangaApp.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MangaApp/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/MangaApp/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MangaApp/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MangaApp/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MangaApp/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/MangaApp/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MangaApp/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/MangaApp/obj/rider.project.model.nuget.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MangaApp/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/MangaApp/obj/rider.project.restore.info" afterDir="false" />
     </list>
@@ -305,6 +312,8 @@
       <workItem from="1719835749046" duration="11004000" />
       <workItem from="1720143055009" duration="4719000" />
       <workItem from="1720703933374" duration="3837000" />
+      <workItem from="1720847548710" duration="21275000" />
+      <workItem from="1721271128026" duration="3315000" />
     </task>
     <task id="LOCAL-00001" summary="mangaapp">
       <option name="closed" value="true" />
