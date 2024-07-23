@@ -7,7 +7,7 @@
 14581||10|C|G
 14581||-9223372036854775808|T|G
 14581||10|T|G</Grants>
-      <IntrospectionStateNumber>619159</IntrospectionStateNumber>
+      <IntrospectionStateNumber>620547</IntrospectionStateNumber>
       <ServerVersion>15.7</ServerVersion>
       <StartupTime>1718474128</StartupTime>
       <TimeZones>true ACDT
@@ -1406,7 +1406,7 @@ true posixrules
 14216||10|C|G
 14216||-9223372036854775808|U|G
 14216||10|U|G</Grants>
-      <IntrospectionStateNumber>619159</IntrospectionStateNumber>
+      <IntrospectionStateNumber>620547</IntrospectionStateNumber>
       <ObjectId>16419</ObjectId>
       <OwnerName>avnadmin</OwnerName>
     </database>
@@ -4851,154 +4851,78 @@ default_transaction_read_only=off</Config>
     <schema id="266" parent="3" name="public">
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <IntrospectionStateNumber>619159</IntrospectionStateNumber>
-      <LastIntrospectionLocalTimestamp>2024-07-23.05:56:10</LastIntrospectionLocalTimestamp>
+      <IntrospectionStateNumber>620547</IntrospectionStateNumber>
+      <LastIntrospectionLocalTimestamp>2024-07-23.09:35:45</LastIntrospectionLocalTimestamp>
       <ObjectId>2200</ObjectId>
       <StateNumber>517</StateNumber>
       <OwnerName>pg_database_owner</OwnerName>
     </schema>
-    <table id="267" parent="266" name="CommentLikes">
-      <ObjectId>16522</ObjectId>
-      <StateNumber>618053</StateNumber>
-      <AccessMethodId>2</AccessMethodId>
-      <OwnerName>avnadmin</OwnerName>
-    </table>
-    <table id="268" parent="266" name="Comments">
+    <table id="267" parent="266" name="Comments">
       <ObjectId>16464</ObjectId>
       <StateNumber>587652</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>avnadmin</OwnerName>
     </table>
-    <table id="269" parent="266" name="GachaItems">
+    <table id="268" parent="266" name="GachaItems">
       <ObjectId>16455</ObjectId>
       <StateNumber>428758</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>avnadmin</OwnerName>
     </table>
-    <table id="270" parent="266" name="UserMangas">
+    <table id="269" parent="266" name="UserMangas">
       <ObjectId>16436</ObjectId>
       <StateNumber>243098</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>avnadmin</OwnerName>
     </table>
-    <table id="271" parent="266" name="Users">
+    <table id="270" parent="266" name="Users">
       <ObjectId>16429</ObjectId>
       <StateNumber>391686</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>avnadmin</OwnerName>
     </table>
-    <table id="272" parent="266" name="__EFMigrationsHistory">
+    <table id="271" parent="266" name="__EFMigrationsHistory">
       <ObjectId>16424</ObjectId>
       <StateNumber>1296</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>avnadmin</OwnerName>
     </table>
-    <column id="273" parent="267" name="LikeId">
+    <column id="272" parent="267" name="CommentId">
       <DasType>uuid|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <StateNumber>618053</StateNumber>
+      <StateNumber>326164</StateNumber>
       <TypeId>2950</TypeId>
     </column>
-    <column id="274" parent="267" name="CommentId">
+    <column id="273" parent="267" name="UserId">
       <DasType>uuid|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
-      <StateNumber>618053</StateNumber>
+      <StateNumber>326164</StateNumber>
       <TypeId>2950</TypeId>
     </column>
-    <column id="275" parent="267" name="UserId">
-      <DasType>uuid|0s</DasType>
+    <column id="274" parent="267" name="slug">
+      <DasType>text|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
-      <StateNumber>618053</StateNumber>
-      <TypeId>2950</TypeId>
+      <StateNumber>326164</StateNumber>
+      <TypeId>25</TypeId>
+    </column>
+    <column id="275" parent="267" name="Comment">
+      <DasType>text|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+      <StateNumber>326164</StateNumber>
+      <TypeId>25</TypeId>
     </column>
     <column id="276" parent="267" name="CreatedAt">
-      <DasType>timestamp with time zone|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>4</Position>
-      <StateNumber>618053</StateNumber>
-      <TypeId>1184</TypeId>
-    </column>
-    <foreign-key id="277" parent="267" name="FK_CommentLikes_Comments_CommentId">
-      <ColNames>CommentId</ColNames>
-      <ObjectId>16527</ObjectId>
-      <OnDelete>cascade</OnDelete>
-      <StateNumber>618053</StateNumber>
-      <RefKeyColPositions>1</RefKeyColPositions>
-      <RefTableId>16464</RefTableId>
-    </foreign-key>
-    <foreign-key id="278" parent="267" name="FK_CommentLikes_Users_UserId">
-      <ColNames>UserId</ColNames>
-      <ObjectId>16532</ObjectId>
-      <OnDelete>cascade</OnDelete>
-      <StateNumber>618053</StateNumber>
-      <RefKeyColPositions>1</RefKeyColPositions>
-      <RefTableId>16429</RefTableId>
-    </foreign-key>
-    <index id="279" parent="267" name="PK_CommentLikes">
-      <ColNames>LikeId</ColNames>
-      <ObjectId>16539</ObjectId>
-      <Primary>1</Primary>
-      <StateNumber>619141</StateNumber>
-      <Unique>1</Unique>
-      <AccessMethodId>403</AccessMethodId>
-    </index>
-    <index id="280" parent="267" name="IX_CommentLikes_CommentId">
-      <ColNames>CommentId</ColNames>
-      <ObjectId>16537</ObjectId>
-      <StateNumber>618053</StateNumber>
-      <AccessMethodId>403</AccessMethodId>
-    </index>
-    <index id="281" parent="267" name="IX_CommentLikes_UserId">
-      <ColNames>UserId</ColNames>
-      <ObjectId>16538</ObjectId>
-      <StateNumber>618053</StateNumber>
-      <AccessMethodId>403</AccessMethodId>
-    </index>
-    <key id="282" parent="267" name="PK_CommentLikes">
-      <ObjectId>16540</ObjectId>
-      <Primary>1</Primary>
-      <StateNumber>619141</StateNumber>
-      <UnderlyingIndexId>16539</UnderlyingIndexId>
-    </key>
-    <column id="283" parent="268" name="CommentId">
-      <DasType>uuid|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-      <StateNumber>326164</StateNumber>
-      <TypeId>2950</TypeId>
-    </column>
-    <column id="284" parent="268" name="UserId">
-      <DasType>uuid|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>2</Position>
-      <StateNumber>326164</StateNumber>
-      <TypeId>2950</TypeId>
-    </column>
-    <column id="285" parent="268" name="slug">
-      <DasType>text|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>3</Position>
-      <StateNumber>326164</StateNumber>
-      <TypeId>25</TypeId>
-    </column>
-    <column id="286" parent="268" name="Comment">
-      <DasType>text|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>4</Position>
-      <StateNumber>326164</StateNumber>
-      <TypeId>25</TypeId>
-    </column>
-    <column id="287" parent="268" name="CreatedAt">
       <DasType>timestamp with time zone|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
       <StateNumber>326164</StateNumber>
       <TypeId>1184</TypeId>
     </column>
-    <column id="288" parent="268" name="Like">
+    <column id="277" parent="267" name="Like">
       <DasType>integer|0s</DasType>
       <DefaultExpression>0</DefaultExpression>
       <NotNull>1</NotNull>
@@ -5006,7 +4930,7 @@ default_transaction_read_only=off</Config>
       <StateNumber>587652</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <foreign-key id="289" parent="268" name="FK_Comments_Users_UserId">
+    <foreign-key id="278" parent="267" name="FK_Comments_Users_UserId">
       <ColNames>UserId</ColNames>
       <ObjectId>16471</ObjectId>
       <OnDelete>cascade</OnDelete>
@@ -5014,7 +4938,7 @@ default_transaction_read_only=off</Config>
       <RefKeyColPositions>1</RefKeyColPositions>
       <RefTableId>16429</RefTableId>
     </foreign-key>
-    <index id="290" parent="268" name="PK_Comments">
+    <index id="279" parent="267" name="PK_Comments">
       <ColNames>CommentId</ColNames>
       <ObjectId>16469</ObjectId>
       <Primary>1</Primary>
@@ -5022,61 +4946,61 @@ default_transaction_read_only=off</Config>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <index id="291" parent="268" name="IX_Comments_UserId">
+    <index id="280" parent="267" name="IX_Comments_UserId">
       <ColNames>UserId</ColNames>
       <ObjectId>16476</ObjectId>
       <StateNumber>326164</StateNumber>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="292" parent="268" name="PK_Comments">
+    <key id="281" parent="267" name="PK_Comments">
       <ObjectId>16470</ObjectId>
       <Primary>1</Primary>
       <StateNumber>326164</StateNumber>
       <UnderlyingIndexId>16469</UnderlyingIndexId>
     </key>
-    <column id="293" parent="269" name="Id">
+    <column id="282" parent="268" name="Id">
       <DasType>uuid|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StateNumber>141032</StateNumber>
       <TypeId>2950</TypeId>
     </column>
-    <column id="294" parent="269" name="name">
+    <column id="283" parent="268" name="name">
       <DasType>text|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StateNumber>427973</StateNumber>
       <TypeId>25</TypeId>
     </column>
-    <column id="295" parent="269" name="thumb_url">
+    <column id="284" parent="268" name="thumb_url">
       <DasType>text|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
       <StateNumber>427973</StateNumber>
       <TypeId>25</TypeId>
     </column>
-    <column id="296" parent="269" name="rarity">
+    <column id="285" parent="268" name="rarity">
       <DasType>text|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
       <StateNumber>141032</StateNumber>
       <TypeId>25</TypeId>
     </column>
-    <column id="297" parent="269" name="bgColor">
+    <column id="286" parent="268" name="bgColor">
       <DasType>text|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
       <StateNumber>141032</StateNumber>
       <TypeId>25</TypeId>
     </column>
-    <column id="298" parent="269" name="point">
+    <column id="287" parent="268" name="point">
       <DasType>integer|0s</DasType>
       <NotNull>1</NotNull>
       <Position>6</Position>
       <StateNumber>141032</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="299" parent="269" name="rate">
+    <column id="288" parent="268" name="rate">
       <DasType>real|0s</DasType>
       <DefaultExpression>0</DefaultExpression>
       <NotNull>1</NotNull>
@@ -5084,7 +5008,7 @@ default_transaction_read_only=off</Config>
       <StateNumber>428758</StateNumber>
       <TypeId>700</TypeId>
     </column>
-    <index id="300" parent="269" name="PK_GachaItems">
+    <index id="289" parent="268" name="PK_GachaItems">
       <ColNames>Id</ColNames>
       <ObjectId>16460</ObjectId>
       <Primary>1</Primary>
@@ -5092,48 +5016,48 @@ default_transaction_read_only=off</Config>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="301" parent="269" name="PK_GachaItems">
+    <key id="290" parent="268" name="PK_GachaItems">
       <ObjectId>16461</ObjectId>
       <Primary>1</Primary>
       <StateNumber>141032</StateNumber>
       <UnderlyingIndexId>16460</UnderlyingIndexId>
     </key>
-    <column id="302" parent="270" name="MangaId">
+    <column id="291" parent="269" name="MangaId">
       <DasType>uuid|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StateNumber>1324</StateNumber>
       <TypeId>2950</TypeId>
     </column>
-    <column id="303" parent="270" name="UserId">
+    <column id="292" parent="269" name="UserId">
       <DasType>uuid|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StateNumber>1324</StateNumber>
       <TypeId>2950</TypeId>
     </column>
-    <column id="304" parent="270" name="Slug">
+    <column id="293" parent="269" name="Slug">
       <DasType>text|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
       <StateNumber>1324</StateNumber>
       <TypeId>25</TypeId>
     </column>
-    <column id="305" parent="270" name="MangaName">
+    <column id="294" parent="269" name="MangaName">
       <DasType>text|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
       <StateNumber>1324</StateNumber>
       <TypeId>25</TypeId>
     </column>
-    <column id="306" parent="270" name="MangaImage">
+    <column id="295" parent="269" name="MangaImage">
       <DasType>text|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
       <StateNumber>1324</StateNumber>
       <TypeId>25</TypeId>
     </column>
-    <column id="307" parent="270" name="SaveType">
+    <column id="296" parent="269" name="SaveType">
       <DasType>integer|0s</DasType>
       <DefaultExpression>0</DefaultExpression>
       <NotNull>1</NotNull>
@@ -5141,7 +5065,7 @@ default_transaction_read_only=off</Config>
       <StateNumber>243098</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <foreign-key id="308" parent="270" name="FK_UserMangas_Users_UserId">
+    <foreign-key id="297" parent="269" name="FK_UserMangas_Users_UserId">
       <ColNames>UserId</ColNames>
       <ObjectId>16443</ObjectId>
       <OnDelete>cascade</OnDelete>
@@ -5149,7 +5073,7 @@ default_transaction_read_only=off</Config>
       <RefKeyColPositions>1</RefKeyColPositions>
       <RefTableId>16429</RefTableId>
     </foreign-key>
-    <index id="309" parent="270" name="PK_UserMangas">
+    <index id="298" parent="269" name="PK_UserMangas">
       <ColNames>MangaId</ColNames>
       <ObjectId>16441</ObjectId>
       <Primary>1</Primary>
@@ -5157,62 +5081,62 @@ default_transaction_read_only=off</Config>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <index id="310" parent="270" name="IX_UserMangas_UserId">
+    <index id="299" parent="269" name="IX_UserMangas_UserId">
       <ColNames>UserId</ColNames>
       <ObjectId>16448</ObjectId>
       <StateNumber>1324</StateNumber>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="311" parent="270" name="PK_UserMangas">
+    <key id="300" parent="269" name="PK_UserMangas">
       <ObjectId>16442</ObjectId>
       <Primary>1</Primary>
       <StateNumber>1324</StateNumber>
       <UnderlyingIndexId>16441</UnderlyingIndexId>
     </key>
-    <column id="312" parent="271" name="UserId">
+    <column id="301" parent="270" name="UserId">
       <DasType>uuid|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StateNumber>1324</StateNumber>
       <TypeId>2950</TypeId>
     </column>
-    <column id="313" parent="271" name="UserName">
+    <column id="302" parent="270" name="UserName">
       <DasType>text|0s</DasType>
       <Position>2</Position>
       <StateNumber>1324</StateNumber>
       <TypeId>25</TypeId>
     </column>
-    <column id="314" parent="271" name="UserEmail">
+    <column id="303" parent="270" name="UserEmail">
       <DasType>text|0s</DasType>
       <Position>3</Position>
       <StateNumber>1324</StateNumber>
       <TypeId>25</TypeId>
     </column>
-    <column id="315" parent="271" name="Avatar">
+    <column id="304" parent="270" name="Avatar">
       <DasType>text|0s</DasType>
       <Position>4</Position>
       <StateNumber>1324</StateNumber>
       <TypeId>25</TypeId>
     </column>
-    <column id="316" parent="271" name="HashPassword">
+    <column id="305" parent="270" name="HashPassword">
       <DasType>bytea|0s</DasType>
       <Position>5</Position>
       <StateNumber>1324</StateNumber>
       <TypeId>17</TypeId>
     </column>
-    <column id="317" parent="271" name="SaltPassword">
+    <column id="306" parent="270" name="SaltPassword">
       <DasType>bytea|0s</DasType>
       <Position>6</Position>
       <StateNumber>1324</StateNumber>
       <TypeId>17</TypeId>
     </column>
-    <column id="318" parent="271" name="FaceAuthenticationImage">
+    <column id="307" parent="270" name="FaceAuthenticationImage">
       <DasType>text|0s</DasType>
       <Position>7</Position>
       <StateNumber>353567</StateNumber>
       <TypeId>25</TypeId>
     </column>
-    <column id="319" parent="271" name="CreatedAt">
+    <column id="308" parent="270" name="CreatedAt">
       <DasType>timestamp with time zone|0s</DasType>
       <DefaultExpression>&apos;-infinity&apos;::timestamp with time zone</DefaultExpression>
       <NotNull>1</NotNull>
@@ -5220,7 +5144,7 @@ default_transaction_read_only=off</Config>
       <StateNumber>70134</StateNumber>
       <TypeId>1184</TypeId>
     </column>
-    <column id="320" parent="271" name="Point">
+    <column id="309" parent="270" name="Point">
       <DasType>bigint|0s</DasType>
       <DefaultExpression>0</DefaultExpression>
       <NotNull>1</NotNull>
@@ -5228,7 +5152,7 @@ default_transaction_read_only=off</Config>
       <StateNumber>135584</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <column id="321" parent="271" name="IsBanned">
+    <column id="310" parent="270" name="IsBanned">
       <DasType>boolean|0s</DasType>
       <DefaultExpression>false</DefaultExpression>
       <NotNull>1</NotNull>
@@ -5236,7 +5160,7 @@ default_transaction_read_only=off</Config>
       <StateNumber>391686</StateNumber>
       <TypeId>16</TypeId>
     </column>
-    <index id="322" parent="271" name="PK_Users">
+    <index id="311" parent="270" name="PK_Users">
       <ColNames>UserId</ColNames>
       <ObjectId>16434</ObjectId>
       <Primary>1</Primary>
@@ -5244,27 +5168,27 @@ default_transaction_read_only=off</Config>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="323" parent="271" name="PK_Users">
+    <key id="312" parent="270" name="PK_Users">
       <ObjectId>16435</ObjectId>
       <Primary>1</Primary>
       <StateNumber>1324</StateNumber>
       <UnderlyingIndexId>16434</UnderlyingIndexId>
     </key>
-    <column id="324" parent="272" name="MigrationId">
+    <column id="313" parent="271" name="MigrationId">
       <DasType>varchar(150)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StateNumber>1296</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="325" parent="272" name="ProductVersion">
+    <column id="314" parent="271" name="ProductVersion">
       <DasType>varchar(32)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StateNumber>1296</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="326" parent="272" name="PK___EFMigrationsHistory">
+    <index id="315" parent="271" name="PK___EFMigrationsHistory">
       <ColNames>MigrationId</ColNames>
       <ObjectId>16427</ObjectId>
       <Primary>1</Primary>
@@ -5275,7 +5199,7 @@ default_transaction_read_only=off</Config>
       <CollationIds>100</CollationIds>
       <CollationParentNames>pg_catalog</CollationParentNames>
     </index>
-    <key id="327" parent="272" name="PK___EFMigrationsHistory">
+    <key id="316" parent="271" name="PK___EFMigrationsHistory">
       <ObjectId>16428</ObjectId>
       <Primary>1</Primary>
       <StateNumber>1296</StateNumber>
