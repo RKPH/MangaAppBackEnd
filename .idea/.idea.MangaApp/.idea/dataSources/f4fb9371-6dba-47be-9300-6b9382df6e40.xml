@@ -1410,75 +1410,7 @@ true posixrules
       <ObjectId>16419</ObjectId>
       <OwnerName>avnadmin</OwnerName>
     </database>
-    <role id="4" parent="1" name="_aiven">
-      <CanLogin>1</CanLogin>
-      <Config>default_transaction_isolation=read committed
-pgaudit.log=none
-default_transaction_read_only=off</Config>
-      <ObjectId>16416</ObjectId>
-      <Replication>1</Replication>
-      <SuperRole>1</SuperRole>
-    </role>
-    <role id="5" parent="1" name="_avnadmin_managed">
-      <ObjectId>16417</ObjectId>
-      <RoleGrants>3375!
-3377
-4200</RoleGrants>
-    </role>
-    <role id="6" parent="1" name="_avnadmin_monitor">
-      <CanLogin>1</CanLogin>
-      <ObjectId>16463</ObjectId>
-      <RoleGrants>3373</RoleGrants>
-    </role>
-    <role id="7" parent="1" name="avnadmin">
-      <BypassRls>1</BypassRls>
-      <CanLogin>1</CanLogin>
-      <CreateDb>1</CreateDb>
-      <CreateRole>1</CreateRole>
-      <ObjectId>16418</ObjectId>
-      <Replication>1</Replication>
-      <RoleGrants>16417</RoleGrants>
-    </role>
-    <role id="8" parent="1" name="pg_checkpoint">
-      <ObjectId>4544</ObjectId>
-    </role>
-    <role id="9" parent="1" name="pg_database_owner">
-      <ObjectId>6171</ObjectId>
-    </role>
-    <role id="10" parent="1" name="pg_execute_server_program">
-      <ObjectId>4571</ObjectId>
-    </role>
-    <role id="11" parent="1" name="pg_monitor">
-      <ObjectId>3373</ObjectId>
-      <RoleGrants>3374
-3375
-3377</RoleGrants>
-    </role>
-    <role id="12" parent="1" name="pg_read_all_data">
-      <ObjectId>6181</ObjectId>
-    </role>
-    <role id="13" parent="1" name="pg_read_all_settings">
-      <ObjectId>3374</ObjectId>
-    </role>
-    <role id="14" parent="1" name="pg_read_all_stats">
-      <ObjectId>3375</ObjectId>
-    </role>
-    <role id="15" parent="1" name="pg_read_server_files">
-      <ObjectId>4569</ObjectId>
-    </role>
-    <role id="16" parent="1" name="pg_signal_backend">
-      <ObjectId>4200</ObjectId>
-    </role>
-    <role id="17" parent="1" name="pg_stat_scan_tables">
-      <ObjectId>3377</ObjectId>
-    </role>
-    <role id="18" parent="1" name="pg_write_all_data">
-      <ObjectId>6182</ObjectId>
-    </role>
-    <role id="19" parent="1" name="pg_write_server_files">
-      <ObjectId>4570</ObjectId>
-    </role>
-    <role id="20" parent="1" name="postgres">
+    <role id="4" parent="1" name="postgres">
       <BypassRls>1</BypassRls>
       <CanLogin>1</CanLogin>
       <Config>default_transaction_isolation=read committed
@@ -1489,6 +1421,74 @@ default_transaction_read_only=off</Config>
       <ObjectId>10</ObjectId>
       <Replication>1</Replication>
       <SuperRole>1</SuperRole>
+    </role>
+    <role id="5" parent="1" name="pg_database_owner">
+      <ObjectId>6171</ObjectId>
+    </role>
+    <role id="6" parent="1" name="pg_read_all_data">
+      <ObjectId>6181</ObjectId>
+    </role>
+    <role id="7" parent="1" name="pg_write_all_data">
+      <ObjectId>6182</ObjectId>
+    </role>
+    <role id="8" parent="1" name="pg_monitor">
+      <ObjectId>3373</ObjectId>
+      <RoleGrants>3374
+3375
+3377</RoleGrants>
+    </role>
+    <role id="9" parent="1" name="pg_read_all_settings">
+      <ObjectId>3374</ObjectId>
+    </role>
+    <role id="10" parent="1" name="pg_read_all_stats">
+      <ObjectId>3375</ObjectId>
+    </role>
+    <role id="11" parent="1" name="pg_stat_scan_tables">
+      <ObjectId>3377</ObjectId>
+    </role>
+    <role id="12" parent="1" name="pg_read_server_files">
+      <ObjectId>4569</ObjectId>
+    </role>
+    <role id="13" parent="1" name="pg_write_server_files">
+      <ObjectId>4570</ObjectId>
+    </role>
+    <role id="14" parent="1" name="pg_execute_server_program">
+      <ObjectId>4571</ObjectId>
+    </role>
+    <role id="15" parent="1" name="pg_signal_backend">
+      <ObjectId>4200</ObjectId>
+    </role>
+    <role id="16" parent="1" name="pg_checkpoint">
+      <ObjectId>4544</ObjectId>
+    </role>
+    <role id="17" parent="1" name="_avnadmin_managed">
+      <ObjectId>16417</ObjectId>
+      <RoleGrants>3375!
+3377
+4200</RoleGrants>
+    </role>
+    <role id="18" parent="1" name="_avnadmin_monitor">
+      <CanLogin>1</CanLogin>
+      <ObjectId>16463</ObjectId>
+      <RoleGrants>3373</RoleGrants>
+    </role>
+    <role id="19" parent="1" name="_aiven">
+      <CanLogin>1</CanLogin>
+      <Config>default_transaction_isolation=read committed
+pgaudit.log=none
+default_transaction_read_only=off</Config>
+      <ObjectId>16416</ObjectId>
+      <Replication>1</Replication>
+      <SuperRole>1</SuperRole>
+    </role>
+    <role id="20" parent="1" name="avnadmin">
+      <BypassRls>1</BypassRls>
+      <CanLogin>1</CanLogin>
+      <CreateDb>1</CreateDb>
+      <CreateRole>1</CreateRole>
+      <ObjectId>16418</ObjectId>
+      <Replication>1</Replication>
+      <RoleGrants>16417</RoleGrants>
     </role>
     <tablespace id="21" parent="1" name="pg_default">
       <ObjectId>1663</ObjectId>
