@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="defaultdb@pg-5d571e-itec-16de.l.aivencloud.com" uuid="f4fb9371-6dba-47be-9300-6b9382df6e40">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <configured-by-url>true</configured-by-url>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://pg-5d571e-itec-16de.l.aivencloud.com:23955/defaultdb?password=AVNS_XcCNqGGncxPbv2qkznS&amp;sslmode=Require&amp;user=avnadmin</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+  </component>
+</project>

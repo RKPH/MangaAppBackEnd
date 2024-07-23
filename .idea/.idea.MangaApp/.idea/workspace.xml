@@ -17,6 +17,7 @@
       <change afterPath="$PROJECT_DIR$/MangaApp/DTO/CommentDto.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/MangaApp/DTO/CommentReponseDto.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/MangaApp/DTO/GachaDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MangaApp/DTO/LikeCommentRequestDto.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/MangaApp/DTO/RequestUpdatePointDto.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/MangaApp/Interfaces/ICommentRepository.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/MangaApp/Interfaces/IGachaRepository.cs" afterDir="false" />
@@ -36,13 +37,30 @@
       <change afterPath="$PROJECT_DIR$/MangaApp/Migrations/20240701144136_adjust Gacha table a little bit.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/MangaApp/Migrations/20240701164802_add rate to Gacha.Designer.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/MangaApp/Migrations/20240701164802_add rate to Gacha.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MangaApp/Migrations/20240719162244_add new entity.Designer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MangaApp/Migrations/20240719162244_add new entity.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MangaApp/Migrations/20240720123307_Fix db.Designer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MangaApp/Migrations/20240720123307_Fix db.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MangaApp/Migrations/20240720173332_fix db 2.Designer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MangaApp/Migrations/20240720173332_fix db 2.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MangaApp/Migrations/20240720174406_sua db.Designer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MangaApp/Migrations/20240720174406_sua db.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MangaApp/Migrations/20240720174727_sau db 2.Designer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MangaApp/Migrations/20240720174727_sau db 2.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/MangaApp/Model/Domain/Comments.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/MangaApp/Model/Domain/SaveType.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/MangaApp/Respository/CommentRepository.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/MangaApp/Respository/GachaRepository.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/MangaApp/Respository/UserMangaRepository.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/MangaApp/Respository/UserRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MangaApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MangaApp/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MangaApp/bin/Debug/net8.0/FParsec.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MangaApp/bin/Debug/net8.0/FParsecCS.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MangaApp/bin/Debug/net8.0/FSharp.Data.DesignTime.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MangaApp/bin/Debug/net8.0/FSharp.Data.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MangaApp/bin/Debug/net8.0/OAuth2.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MangaApp/bin/Debug/net8.0/OAuth2Client.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MangaApp/bin/Debug/net8.0/RestSharp.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MangaApp/bin/Debug/net8.0/VersionOne.Parsers.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MangaApp" beforeDir="false" afterPath="$PROJECT_DIR$/MangaApp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MangaApp/Controllers/AuthController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MangaApp/Controllers/AuthController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MangaApp/Controllers/UserMangaController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MangaApp/Controllers/UserMangaController.cs" afterDir="false" />
@@ -59,6 +77,7 @@
       <change beforePath="$PROJECT_DIR$/MangaApp/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MangaApp/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MangaApp/Services/TokenService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MangaApp/Services/TokenService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MangaApp/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/MangaApp/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MangaApp/bin/Debug/net8.0/MangaApp.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/MangaApp/bin/Debug/net8.0/MangaApp.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MangaApp/bin/Debug/net8.0/MangaApp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MangaApp/bin/Debug/net8.0/MangaApp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MangaApp/bin/Debug/net8.0/MangaApp.exe" beforeDir="false" afterPath="$PROJECT_DIR$/MangaApp/bin/Debug/net8.0/MangaApp.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MangaApp/bin/Debug/net8.0/MangaApp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MangaApp/bin/Debug/net8.0/MangaApp.pdb" afterDir="false" />
@@ -68,6 +87,7 @@
       <change beforePath="$PROJECT_DIR$/MangaApp/obj/Debug/net8.0/MangaApp.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MangaApp/obj/Debug/net8.0/MangaApp.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MangaApp/obj/Debug/net8.0/MangaApp.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MangaApp/obj/Debug/net8.0/MangaApp.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MangaApp/obj/Debug/net8.0/MangaApp.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MangaApp/obj/Debug/net8.0/MangaApp.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MangaApp/obj/Debug/net8.0/MangaApp.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/MangaApp/obj/Debug/net8.0/MangaApp.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MangaApp/obj/Debug/net8.0/MangaApp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MangaApp/obj/Debug/net8.0/MangaApp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MangaApp/obj/Debug/net8.0/MangaApp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MangaApp/obj/Debug/net8.0/MangaApp.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MangaApp/obj/Debug/net8.0/MangaApp.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/MangaApp/obj/Debug/net8.0/MangaApp.sourcelink.json" afterDir="false" />
@@ -124,39 +144,42 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Launch Settings Profile.MangaApp: IIS Express.executor&quot;: &quot;Run&quot;,
-    &quot;.NET Launch Settings Profile.MangaApp: http.executor&quot;: &quot;Run&quot;,
-    &quot;.NET Launch Settings Profile.MangaApp: https.executor&quot;: &quot;Run&quot;,
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Docker.MangaApp/Dockerfile.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.MangaApp | #1.executor&quot;: &quot;Run&quot;,
-    &quot;Publish to IIS.Publish MangaApp to IIS.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.smartKeys_rider&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Launch Settings Profile.MangaApp: IIS Express.executor": "Run",
+    ".NET Launch Settings Profile.MangaApp: http.executor": "Run",
+    ".NET Launch Settings Profile.MangaApp: https.executor": "Run",
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Docker.MangaApp/Dockerfile.executor": "Run",
+    "HTTP Request.MangaApp | #1.executor": "Run",
+    "Publish to IIS.Publish MangaApp to IIS.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "editor.preferences.smartKeys_rider",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;ChangesTree.GroupingKeys&quot;: [
-      &quot;directory&quot;
+  "keyToStringList": {
+    "ChangesTree.GroupingKeys": [
+      "directory"
     ],
-    &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\pnghu\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\pnghu\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\pnghu\\AppData\\Local\\Symbols\\src&quot;
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ],
+    "rider.external.source.directories": [
+      "C:\\Users\\pnghu\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
+      "C:\\Users\\pnghu\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
+      "C:\\Users\\pnghu\\AppData\\Local\\Symbols\\src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Docker.MangaApp/Dockerfile">
     <configuration name="MangaApp: hung11062003-001-site1 - FTP" type="DotNetMsBuildPublish" factoryName="Publish to IIS">
       <riderPublish configuration="Release" platform="Any CPU" publish_profile="hung11062003-001-site1 - FTP.pubxml" pubxml_path="$PROJECT_DIR$/MangaApp/Properties/PublishProfiles/hung11062003-001-site1 - FTP.pubxml" user_name="hung11062003-001" uuid_high="-3320815708700391370" uuid_low="-7491799678192294649" />
@@ -314,6 +337,7 @@
       <workItem from="1720703933374" duration="3837000" />
       <workItem from="1720847548710" duration="21275000" />
       <workItem from="1721271128026" duration="3315000" />
+      <workItem from="1721303563880" duration="34121000" />
     </task>
     <task id="LOCAL-00001" summary="mangaapp">
       <option name="closed" value="true" />
