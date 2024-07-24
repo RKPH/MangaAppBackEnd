@@ -61,6 +61,11 @@
       <change afterPath="$PROJECT_DIR$/MangaApp/Migrations/20240723093305_change.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/MangaApp/Migrations/20240723135709_1.Designer.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/MangaApp/Migrations/20240723135709_1.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MangaApp/Migrations/20240724112000_Fix something.Designer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MangaApp/Migrations/20240724112000_Fix something.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MangaApp/Migrations/20240724112356_fix commentLike.Designer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MangaApp/Migrations/20240724112356_fix commentLike.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MangaApp/Model/Domain/CommentLikes.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/MangaApp/Model/Domain/Comments.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/MangaApp/Model/Domain/SaveType.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/MangaApp/Respository/CommentRepository.cs" afterDir="false" />
@@ -351,6 +356,7 @@
       <workItem from="1721271128026" duration="3315000" />
       <workItem from="1721303563880" duration="34121000" />
       <workItem from="1721699009485" duration="31115000" />
+      <workItem from="1721797808731" duration="8065000" />
     </task>
     <task id="LOCAL-00001" summary="mangaapp">
       <option name="closed" value="true" />
