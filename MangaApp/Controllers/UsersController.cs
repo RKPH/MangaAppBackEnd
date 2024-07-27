@@ -108,7 +108,7 @@ namespace MangaApp.Controllers
             var userRole = User.FindFirst(ClaimTypes.Role);
             if(userRole == null || userRole.Value != "Admin")
             {   
-                return Conflict("You are not authorized to delete a user.");
+                return Unauthorized("You are not authorized to delete a user.");
             }
             var user = await dbContext.Users.FirstOrDefaultAsync(u => u.UserId == id);
 
