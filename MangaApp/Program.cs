@@ -10,6 +10,7 @@ using Microsoft.IdentityModel.Tokens;
 using CloudinaryDotNet;
 
 using MangaApp.Respository;
+using OAuth2Client;
 
 var builder = WebApplication.CreateBuilder(args);
 var _config = builder.Configuration;
@@ -49,6 +50,11 @@ builder.Services.AddAuthentication(options =>
             ValidateAudience = false,
         };
     });
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy("Admin", policy => policy.RequireClaim("role", "Admin"));
+    options.AddPolicy("User", policy => policy.RequireClaim("role", "User"));
+});
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

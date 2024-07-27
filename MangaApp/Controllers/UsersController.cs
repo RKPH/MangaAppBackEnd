@@ -7,6 +7,7 @@ using System;
 using System.Linq;
 using System.Threading.Tasks;
 using MangaApp.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 
 namespace MangaApp.Controllers
 {
@@ -98,10 +99,14 @@ namespace MangaApp.Controllers
         }
 
         
-
+        [Authorize(Policy = "Admin")]
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteUser(Guid id)
         {
+            if (!User.IsInRole("Admin"))
+            {
+                return Unauthorized("You are not authorized to delete a user.");
+            }
             var user = await dbContext.Users.FirstOrDefaultAsync(u => u.UserId == id);
 
             if (user == null)
