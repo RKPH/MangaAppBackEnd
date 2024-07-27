@@ -35,8 +35,8 @@ builder.Services.AddAuthentication(options =>
     })
     .AddGoogle(options =>
     {
-        options.ClientId = _config["GOOGLE_CLIENT_ID"] ?? string.Empty;
-        options.ClientSecret = _config["GOOGLE_CLIENT_SECRET"] ?? string.Empty;
+        options.ClientId = _config["GOOGLE_CLIENT_ID"];
+        options.ClientSecret = _config["GOOGLE_CLIENT_SECRET"];
     })
     .AddJwtBearer(options =>
     {
@@ -53,7 +53,7 @@ builder.Services.AddAuthentication(options =>
 builder.Services.AddAuthorization(options =>
 {
     options.AddPolicy("Admin", policy => policy.RequireClaim("role", "Admin"));
-    
+    options.AddPolicy("User", policy => policy.RequireClaim("role", "User"));
 });
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
