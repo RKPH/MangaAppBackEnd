@@ -7,7 +7,6 @@ using System;
 using System.Linq;
 using System.Threading.Tasks;
 using MangaApp.Interfaces;
-using Microsoft.AspNetCore.Authorization;
 
 namespace MangaApp.Controllers
 {
@@ -99,12 +98,11 @@ namespace MangaApp.Controllers
         }
 
         
-        [Authorize (Roles = "Admin")]
+
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteUser(Guid id)
         {
             var user = await dbContext.Users.FirstOrDefaultAsync(u => u.UserId == id);
-         
 
             if (user == null)
             {
