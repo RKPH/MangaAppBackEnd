@@ -44,12 +44,22 @@ namespace MangaApp.Controllers
                 return NotFound("User not found.");
             }
             
-            commentDto.UserName = user.UserName;
-            commentDto.Avatar = user.Avatar;
-            commentDto.CreatedAt = DateTime.UtcNow;
+            CommentReponseDto comment = new CommentReponseDto
+            {
+                Comment = commentDto.Comment,
+                CreatedAt = DateTime.UtcNow,
+                Like = 0,
+                User = new UserDto()
+                {
+                    UserName = user.UserName,
+                    Avatar = user.Avatar,
+                    UserID = user.UserId.ToString()
+                }
+                
+            };
 
             await _commentRepository.AddCommentAsync(commentDto);
-            await _hubContext.Clients.All.SendAsync("ReceiveComment", commentDto);
+            await _hubContext.Clients.All.SendAsync("ReceiveComment", comment);
             return Ok(new { message = "Comment added successfully !!!." });
         }
 
