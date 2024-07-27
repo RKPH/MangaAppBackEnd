@@ -67,7 +67,12 @@ var app = builder.Build();
 app.UseCors(policy =>
     policy.WithOrigins("http://localhost:5173", "http://localhost:3000", "http://hung11062003-001-site1.btempurl.com/", "https://manga-app-steel.vercel.app")
         .AllowAnyMethod()
-        .AllowAnyHeader());
+        .AllowAnyHeader()
+        .SetIsOriginAllowed(origin => true)
+        .AllowCredentials())
+    
+    
+    ;
 
 app.UseHttpsRedirection();
 app.UseRouting();
