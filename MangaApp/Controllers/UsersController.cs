@@ -100,8 +100,8 @@ namespace MangaApp.Controllers
         }
 
         
-        [Authorize(Policy = "Admin")]
         [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        [Authorize(Policy = "Admin")]
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteUser(Guid id)
         {
