@@ -28,6 +28,7 @@ namespace MangaApp.Model.Domain
             Avatar = "https://img.freepik.com/free-photo/person-preparing-get-driver-license_23-2150167558.jpg?t=st=1714792408~exp=1714796008~hmac=66a1407366466c5cf9538e70626c0d88501ab59383a7416a53667743666f4247&w=360";
             CreatedAt = DateTime.UtcNow;
             IsBanned = false;
+            Role = "User";
             Point = 100;
         }
     }

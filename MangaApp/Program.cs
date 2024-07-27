@@ -69,10 +69,7 @@ app.UseCors(policy =>
         .AllowAnyMethod()
         .AllowAnyHeader()
         .SetIsOriginAllowed(origin => true)
-        .AllowCredentials())
-    
-    
-    ;
+        .AllowCredentials());
 
 app.UseHttpsRedirection();
 app.UseRouting();

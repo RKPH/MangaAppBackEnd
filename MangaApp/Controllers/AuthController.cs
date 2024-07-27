@@ -56,7 +56,8 @@ namespace MangaApp.Controllers
                 UserName = payload.Name,
                 UserEmail = payload.Email,
                 Avatar = payload.Picture,
-               
+                Role = "User",  
+                IsBanned = false,
             };
 
             _context.Users.Add(user);
@@ -123,6 +124,7 @@ namespace MangaApp.Controllers
                 Avatar = user.Avatar,
                 CreatedAt = user.CreatedAt,
                 Point = user.Point,
+                Role = user.Role,
                 IsBanned = user.IsBanned,
                 UserMangas = user.UserMangas?.Select(um => new UserMangaDto
                 {
