@@ -35,8 +35,8 @@ builder.Services.AddAuthentication(options =>
     })
     .AddGoogle(options =>
     {
-        options.ClientId = _config["GOOGLE_CLIENT_ID"];
-        options.ClientSecret = _config["GOOGLE_CLIENT_SECRET"];
+        options.ClientId = _config["GOOGLE_CLIENT_ID"] ?? string.Empty;
+        options.ClientSecret = _config["GOOGLE_CLIENT_SECRET"] ?? string.Empty;
     })
     .AddJwtBearer(options =>
     {
