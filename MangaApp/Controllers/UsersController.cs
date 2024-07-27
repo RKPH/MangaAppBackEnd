@@ -104,10 +104,7 @@ namespace MangaApp.Controllers
         public async Task<IActionResult> DeleteUser(Guid id)
         {
             var user = await dbContext.Users.FirstOrDefaultAsync(u => u.UserId == id);
-            if (!User.IsInRole("Admin"))
-            {
-                return Unauthorized();
-            }
+         
 
             if (user == null)
             {
