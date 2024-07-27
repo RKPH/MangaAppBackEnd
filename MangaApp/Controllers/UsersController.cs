@@ -101,7 +101,7 @@ namespace MangaApp.Controllers
         }
 
         
-        [Authorize(Policy = "Admin")]
+        [Authorize(Policy = "AdminPolicy")]
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteUser(Guid id)
         {
