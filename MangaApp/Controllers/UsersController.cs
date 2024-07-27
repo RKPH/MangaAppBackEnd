@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 using MangaApp.Interfaces;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -101,11 +102,12 @@ namespace MangaApp.Controllers
 
         
         [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
-        [Authorize(Policy = "Admin")]
+    
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteUser(Guid id)
         {
-            if (!User.IsInRole("Admin"))
+            var userRole = User.FindFirst(ClaimTypes.Role);
+            if(userRole == null || userRole.Value != "Admin")
             {
                 return Unauthorized("You are not authorized to delete a user.");
             }
