@@ -7,7 +7,7 @@
 14581||10|C|G
 14581||-9223372036854775808|T|G
 14581||10|T|G</Grants>
-      <IntrospectionStateNumber>635351</IntrospectionStateNumber>
+      <IntrospectionStateNumber>653848</IntrospectionStateNumber>
       <ServerVersion>15.7</ServerVersion>
       <StartupTime>1718474128</StartupTime>
       <TimeZones>true ACDT
@@ -1402,7 +1402,7 @@ true posixrules
 14216||10|C|G
 14216||-9223372036854775808|U|G
 14216||10|U|G</Grants>
-      <IntrospectionStateNumber>635351</IntrospectionStateNumber>
+      <IntrospectionStateNumber>653848</IntrospectionStateNumber>
       <ObjectId>16419</ObjectId>
       <OwnerName>avnadmin</OwnerName>
     </database>
@@ -4851,8 +4851,8 @@ default_transaction_read_only=off</Config>
     <schema id="266" parent="2" name="public">
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <IntrospectionStateNumber>635351</IntrospectionStateNumber>
-      <LastIntrospectionLocalTimestamp>2024-07-25.01:41:47</LastIntrospectionLocalTimestamp>
+      <IntrospectionStateNumber>653848</IntrospectionStateNumber>
+      <LastIntrospectionLocalTimestamp>2024-07-27.03:56:33</LastIntrospectionLocalTimestamp>
       <ObjectId>2200</ObjectId>
       <StateNumber>517</StateNumber>
       <OwnerName>pg_database_owner</OwnerName>
@@ -4883,7 +4883,7 @@ default_transaction_read_only=off</Config>
     </table>
     <table id="271" parent="266" name="Users">
       <ObjectId>16429</ObjectId>
-      <StateNumber>391686</StateNumber>
+      <StateNumber>653578</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>avnadmin</OwnerName>
     </table>
@@ -5229,7 +5229,15 @@ default_transaction_read_only=off</Config>
       <StateNumber>391686</StateNumber>
       <TypeId>16</TypeId>
     </column>
-    <index id="321" parent="271" name="PK_Users">
+    <column id="321" parent="271" name="Role">
+      <DasType>text|0s</DasType>
+      <DefaultExpression>&apos;&apos;::text</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>13</Position>
+      <StateNumber>653578</StateNumber>
+      <TypeId>25</TypeId>
+    </column>
+    <index id="322" parent="271" name="PK_Users">
       <ColNames>UserId</ColNames>
       <ObjectId>16434</ObjectId>
       <Primary>1</Primary>
@@ -5237,27 +5245,27 @@ default_transaction_read_only=off</Config>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="322" parent="271" name="PK_Users">
+    <key id="323" parent="271" name="PK_Users">
       <ObjectId>16435</ObjectId>
       <Primary>1</Primary>
       <StateNumber>1324</StateNumber>
       <UnderlyingIndexId>16434</UnderlyingIndexId>
     </key>
-    <column id="323" parent="272" name="MigrationId">
+    <column id="324" parent="272" name="MigrationId">
       <DasType>varchar(150)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StateNumber>1296</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="324" parent="272" name="ProductVersion">
+    <column id="325" parent="272" name="ProductVersion">
       <DasType>varchar(32)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StateNumber>1296</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="325" parent="272" name="PK___EFMigrationsHistory">
+    <index id="326" parent="272" name="PK___EFMigrationsHistory">
       <ColNames>MigrationId</ColNames>
       <ObjectId>16427</ObjectId>
       <Primary>1</Primary>
@@ -5268,7 +5276,7 @@ default_transaction_read_only=off</Config>
       <CollationIds>100</CollationIds>
       <CollationParentNames>pg_catalog</CollationParentNames>
     </index>
-    <key id="326" parent="272" name="PK___EFMigrationsHistory">
+    <key id="327" parent="272" name="PK___EFMigrationsHistory">
       <ObjectId>16428</ObjectId>
       <Primary>1</Primary>
       <StateNumber>1296</StateNumber>

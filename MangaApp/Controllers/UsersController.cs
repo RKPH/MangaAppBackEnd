@@ -100,11 +100,15 @@ namespace MangaApp.Controllers
         }
 
         
-        [Authorize (Roles = "Admin")]
+        [Authorize (Policy = "Admin")]
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteUser(Guid id)
         {
-            
+            if (!User.HasClaim(c => c.Type == ClaimTypes.Role && c.Value == "Admin"))
+            {
+                return Unauthorized("You are not authorized to delete a user.");
+            }
+
             var user = await dbContext.Users.FirstOrDefaultAsync(u => u.UserId == id);
             
             if (user == null)
