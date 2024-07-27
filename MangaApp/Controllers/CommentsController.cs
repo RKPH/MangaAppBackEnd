@@ -43,8 +43,10 @@ namespace MangaApp.Controllers
             {
                 return NotFound("User not found.");
             }
-
-           
+            
+            commentDto.UserName = user.UserName;
+            commentDto.Avatar = user.Avatar;
+            commentDto.CreatedAt = DateTime.UtcNow;
 
             await _commentRepository.AddCommentAsync(commentDto);
             await _hubContext.Clients.All.SendAsync("ReceiveComment", commentDto);
