@@ -20,6 +20,7 @@ public class TokenService:ITokenService
         var claims = new List<Claim>
         {
             new Claim(JwtRegisteredClaimNames.Sub,user.UserId.ToString()),
+            new Claim(ClaimTypes.Role,user.Role),
         };
         var creds = new SigningCredentials(_key, SecurityAlgorithms.HmacSha512Signature);
         var tokenDescriptor = new SecurityTokenDescriptor

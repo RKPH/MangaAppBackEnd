@@ -286,3 +286,4 @@ D:\công nghệ thông tin\Dot Net Api\MangaApp\MangaApp\bin\Debug\net8.0\OAuth2
 D:\công nghệ thông tin\Dot Net Api\MangaApp\MangaApp\bin\Debug\net8.0\OAuth2Client.dll
 D:\công nghệ thông tin\Dot Net Api\MangaApp\MangaApp\bin\Debug\net8.0\RestSharp.dll
 D:\công nghệ thông tin\Dot Net Api\MangaApp\MangaApp\bin\Debug\net8.0\VersionOne.Parsers.dll
+D:\công nghệ thông tin\Dot Net Api\MangaApp\MangaApp\bin\Debug\net8.0\System.Net.WebSockets.WebSocketProtocol.dll

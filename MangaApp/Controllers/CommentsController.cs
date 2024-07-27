@@ -20,7 +20,7 @@ namespace MangaApp.Controllers
         {
             _commentRepository = commentRepository;
         }
-
+ 
         [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [HttpPost("addcomment/{slug}")]
         public async Task<IActionResult> CreateComment([FromBody] CommentDto commentDto)

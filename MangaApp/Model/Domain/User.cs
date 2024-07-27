@@ -16,7 +16,8 @@ namespace MangaApp.Model.Domain
         public byte[]? SaltPassword { get; set; }
         public bool IsBanned { get; set; }
         public DateTime CreatedAt { get; set; }
-
+        
+        public string Role { get; set; }
         // Initializing the collection in the constructor to avoid null reference exceptions
         public virtual ICollection<UserManga> UserMangas { get; set; } = new List<UserManga>();
         public virtual ICollection<Comments> _Comments { get; set; } = new List<Comments>();
