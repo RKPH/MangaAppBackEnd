@@ -1,3 +1,4 @@
+using System.Security.Claims;
 using System.Text;
 using System.Text.Json.Serialization;
 using MangaApp.Data;
@@ -52,8 +53,8 @@ builder.Services.AddAuthentication(options =>
     });
 builder.Services.AddAuthorization(options =>
 {
-    options.AddPolicy("Admin", policy => policy.RequireClaim("Role", "Admin"));
-    options.AddPolicy("User", policy => policy.RequireClaim("Role", "User"));
+    options.AddPolicy("Admin", policy => policy.RequireClaim(ClaimTypes.Role, "Admin"));
+    options.AddPolicy("User", policy => policy.RequireClaim(ClaimTypes.Role, "User"));
 });
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -76,6 +77,7 @@ app.UseCors(policy =>
     policy.WithOrigins("http://localhost:5173", "http://localhost:3000","http://hung11062003-001-site1.btempurl.com/", "https://manga-app-steel.vercel.app") // replace with your frontend URL
         .AllowAnyMethod()
         .AllowAnyHeader());
+
 app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
