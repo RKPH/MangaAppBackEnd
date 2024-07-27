@@ -44,8 +44,12 @@ namespace MangaApp.Controllers
                 return NotFound("User not found.");
             }
             
+            
+            var CommentId =await _commentRepository.AddCommentAsync(commentDto);
+            
             CommentReponseDto comment = new CommentReponseDto
-            {
+            {   
+                CommentId = CommentId,
                 Comment = commentDto.Comment,
                 CreatedAt = DateTime.UtcNow,
                 Like = 0,
@@ -58,7 +62,6 @@ namespace MangaApp.Controllers
                 
             };
 
-            await _commentRepository.AddCommentAsync(commentDto);
             await _hubContext.Clients.All.SendAsync("ReceiveComment", comment);
             return Ok(new { message = "Comment added successfully !!!." });
         }

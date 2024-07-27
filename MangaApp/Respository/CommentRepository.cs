@@ -9,7 +9,7 @@ namespace MangaApp.Respository;
 
 public class CommentRepository(MangaAppDbcontext dbContext) : ICommentRepository
 {
-    public async Task AddCommentAsync(CommentDto commentDto)
+    public async Task<Guid> AddCommentAsync(CommentDto commentDto)
     {
         var user = await dbContext.Users.FindAsync(commentDto.UserID);
         
@@ -25,6 +25,7 @@ public class CommentRepository(MangaAppDbcontext dbContext) : ICommentRepository
 
         dbContext.Comments.Add(comment);
         await dbContext.SaveChangesAsync();
+        return comment.CommentId;
     }
     
 
