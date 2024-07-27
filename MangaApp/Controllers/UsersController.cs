@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 using MangaApp.Interfaces;
 using Microsoft.AspNetCore.Authorization;
@@ -103,8 +104,12 @@ namespace MangaApp.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteUser(Guid id)
         {
+            if(!User.HasClaim(c => c.Type == ClaimTypes.Role && c.Value == "Admin"))
+            {
+                return Forbid("Only admin can delete user.");
+            }
             var user = await dbContext.Users.FirstOrDefaultAsync(u => u.UserId == id);
-
+            
             if (user == null)
             {
                 return NotFound("User not found.");
