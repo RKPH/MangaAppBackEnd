@@ -1,12 +1,12 @@
 
 using MangaApp.DTO;
-using MangaApp.Model.Domain;
 using Microsoft.AspNetCore.Mvc;
 
 using MangaApp.Interfaces;
-
+using MangaApp.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.SignalR;
 
 namespace MangaApp.Controllers
 {
@@ -15,10 +15,11 @@ namespace MangaApp.Controllers
     public class CommentsController : ControllerBase
     {
         private readonly ICommentRepository _commentRepository;
-
-        public CommentsController(ICommentRepository commentRepository)
+        private readonly IHubContext<SignalR> _hubContext;
+        public CommentsController(ICommentRepository commentRepository, IHubContext<SignalR> hubContext)
         {
             _commentRepository = commentRepository;
+            _hubContext = hubContext;
         }
  
         [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
@@ -46,7 +47,7 @@ namespace MangaApp.Controllers
            
 
             await _commentRepository.AddCommentAsync(commentDto);
-
+            await _hubContext.Clients.All.SendAsync("ReceiveComment", commentDto);
             return Ok(new { message = "Comment added successfully !!!." });
         }
 
@@ -64,6 +65,7 @@ namespace MangaApp.Controllers
             {
                 return NoContent();
             }
+            
 
             return Ok(comments);
         }
@@ -90,7 +92,7 @@ namespace MangaApp.Controllers
             }
 
             await _commentRepository.LikeCommentAsync(likeCommentRequestDto);
-
+            await _hubContext.Clients.All.SendAsync("ReceiveLike", likeCommentRequestDto);
             return Ok(new { message = "Comment liked successfully !!!." });
         }
     }

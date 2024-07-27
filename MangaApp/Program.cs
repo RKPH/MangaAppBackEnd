@@ -23,7 +23,7 @@ builder.Services.AddSingleton(cloudinary);
 
 // Add services to the container
 builder.Services.AddControllers();
-
+builder.Services.AddSignalR();
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
     {
@@ -39,6 +39,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 builder.Services.AddAuthorization(options =>
 {
     options.AddPolicy("AdminOnly", policy => policy.RequireRole("Admin"));
+   
 });
 
 builder.Services.AddDbContext<MangaAppDbcontext>(options =>
@@ -69,11 +70,12 @@ app.UseCors(policy =>
         .AllowAnyHeader());
 
 app.UseHttpsRedirection();
+app.UseRouting();
 app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
-
+app.MapHub<SignalR>("/signalr"); 
 // Configure port binding
 var port = Environment.GetEnvironmentVariable("PORT") ?? "8080";
 app.Urls.Add($"http://*:{port}");
