@@ -12,6 +12,7 @@ using MangaApp.Data;
 using MangaApp.DTO;
 using MangaApp.Interfaces;
 using MangaApp.Model.Domain;
+using Microsoft.AspNetCore.Authentication.Cookies;
 
 namespace MangaApp.Controllers
 {
@@ -94,7 +95,12 @@ namespace MangaApp.Controllers
 
             if (!VerifyPassword(loginDto.Password, user.HashPassword, user.SaltPassword))
                 return Unauthorized("Invalid Password");
-
+            Response.Cookies.Append("refreshToken", _tokenService.CreateRefreshToken(user), new CookieOptions
+            {
+                HttpOnly = true,
+                SameSite = SameSiteMode.None,
+                Secure = true
+            });
             return new AuthDto
             {
                 Token = _tokenService.CreateToken(user),
@@ -102,7 +108,7 @@ namespace MangaApp.Controllers
             };
         }
 
-        [Authorize]
+        [Authorize(AuthenticationSchemes = CookieAuthenticationDefaults.AuthenticationScheme)]
         [HttpGet("profile")]
         public async Task<ActionResult<UserDto>> GetUserProfile()
         {
