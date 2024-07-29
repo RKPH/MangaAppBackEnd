@@ -95,7 +95,7 @@ namespace MangaApp.Controllers
 
             if (!VerifyPassword(loginDto.Password, user.HashPassword, user.SaltPassword))
                 return Unauthorized("Invalid Password");
-            Response.Cookies.Append("Token", _tokenService.CreateRefreshToken(user), new CookieOptions
+            Response.Cookies.Append("Token", _tokenService.CreateToken(user), new CookieOptions
             {
                 HttpOnly = true,
                 SameSite = SameSiteMode.None,
@@ -108,7 +108,7 @@ namespace MangaApp.Controllers
             };
         }
 
-        [Authorize(AuthenticationSchemes = CookieAuthenticationDefaults.AuthenticationScheme)]
+        
         [HttpGet("profile")]
         public async Task<ActionResult<UserDto>> GetUserProfile()
         {
