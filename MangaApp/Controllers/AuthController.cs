@@ -94,13 +94,7 @@ namespace MangaApp.Controllers
 
             if (!VerifyPassword(loginDto.Password, user.HashPassword, user.SaltPassword))
                 return Unauthorized("Invalid Password");
-            Response.Cookies.Append("Token", _tokenService.CreateToken(user), new Microsoft.AspNetCore.Http.CookieOptions
-            {
-                HttpOnly = true,
-                
-                SameSite = SameSiteMode.None,
-                Secure = true
-            });
+
             return new AuthDto
             {
                 Token = _tokenService.CreateToken(user),
