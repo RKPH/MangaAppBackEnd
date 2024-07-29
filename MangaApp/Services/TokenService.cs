@@ -20,7 +20,24 @@ public class TokenService:ITokenService
         var claims = new List<Claim>
         {
             new(JwtRegisteredClaimNames.Sub,user.UserId.ToString()),
-           new Claim(ClaimTypes.Role,user.Role)
+            new Claim(ClaimTypes.Role,user.Role)
+        };
+        var creds = new SigningCredentials(_key, SecurityAlgorithms.HmacSha512Signature);
+        var tokenDescriptor = new SecurityTokenDescriptor
+        {
+            Subject = new ClaimsIdentity(claims),
+            Expires = DateTime.Now.AddDays(30),
+            SigningCredentials = creds
+        };
+        var tokenHandler = new JwtSecurityTokenHandler();
+        var token = tokenHandler.CreateToken(tokenDescriptor);
+        return tokenHandler.WriteToken(token);
+    }
+    public string CreateRefreshToken(User user)
+    {
+        var claims = new List<Claim>
+        {
+            new(JwtRegisteredClaimNames.Sub,user.UserId.ToString()),
         };
         var creds = new SigningCredentials(_key, SecurityAlgorithms.HmacSha512Signature);
         var tokenDescriptor = new SecurityTokenDescriptor
