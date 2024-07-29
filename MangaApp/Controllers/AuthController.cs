@@ -98,7 +98,7 @@ namespace MangaApp.Controllers
             {
                 HttpOnly = true,
                 
-                SameSite = SameSiteMode.Strict,
+                SameSite = SameSiteMode.None,
                 Secure = true
             });
             return new AuthDto

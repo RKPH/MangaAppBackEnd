@@ -39,9 +39,9 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
     .AddCookie(options =>
     {
-        options.Cookie.Name = "RefreshToken";
-        options.Cookie.SameSite = Microsoft.AspNetCore.Http.SameSiteMode.None;
-        options.Cookie.SecurePolicy = Microsoft.AspNetCore.Http.CookieSecurePolicy.Always;
+        options.Cookie.Name = "Token";
+        options.Cookie.SameSite = SameSiteMode.None;
+        options.Cookie.SecurePolicy = CookieSecurePolicy.Always;
         options.Cookie.HttpOnly = true;
         options.Cookie.MaxAge = TimeSpan.FromDays(30);
         options.Events.OnRedirectToLogin = context =>
