@@ -11,7 +11,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fece7f8c-d6c4-4633-9d67-7af843061a08" name="Changes" comment="" />
+    <list default="true" id="fece7f8c-d6c4-4633-9d67-7af843061a08" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MangaApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MangaApp/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,6 +39,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/aspnetcore/8486d31e24f30e3fa1809a95699a0adc16f448d7/src/Mvc/Mvc.Core/src/ControllerBase.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/efcore/001a6e3b0ddcc11ddc419669b17be25bb7ada109/src/EFCore/Metadata/Builders/ReferenceNavigationBuilder%60.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1c19415d87024aa7ad91fd19f160a6a0cab0/7a/db32707d/JwtBearerDefaults.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
@@ -255,7 +258,7 @@
       <workItem from="1721832595637" duration="16209000" />
       <workItem from="1722044516761" duration="31986000" />
       <workItem from="1722101685693" duration="1088000" />
-      <workItem from="1722229653679" duration="12354000" />
+      <workItem from="1722229653679" duration="15754000" />
     </task>
     <task id="LOCAL-00001" summary="mangaapp">
       <option name="closed" value="true" />
